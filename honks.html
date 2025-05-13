@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    	a {
+        font-size: 24pt;
+        font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+
+<audio id="myAudio" src="https://cdn.freesound.org/previews/575/575369_97550-lq.mp3" preload="auto">
+</audio>
+<a onClick="togglePlay()">Click me for honks</a>
+
+<script>
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};c
+</script>
+
+  </body>
+</html>
