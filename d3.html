@@ -7,7 +7,6 @@
 <div id="container"></div>
 <script type="module">
 chart = {
-  data = FileAttachment("miserables.json").json()
   // Specify the dimensions of the chart.
   const width = 928;
   const height = 600;
@@ -102,6 +101,8 @@ chart = {
 
   return svg.node();
 }
+  
+data = FileAttachment("miserables.json").json()
 </script>
 </body>
 </html>
